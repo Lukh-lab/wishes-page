@@ -9,8 +9,11 @@
 
 .gallery-images {
    display: flex;
-   justify-content: center;
+   justify-content: start; /* Aligns images to the left for scroll */
    gap: 10px;
+   overflow-x: auto; /* Enables horizontal scrolling */
+   overflow-y: hidden; /* Hides vertical scroll */
+   padding-bottom: 10px; /* Adds some space for scroll visibility */
 }
 
 .gallery-images img {
@@ -21,4 +24,18 @@
 
 .gallery-images img:hover {
    transform: scale(1.1);
+}
+
+/* Optional: Styling for scrollbar on supported browsers */
+.gallery-images::-webkit-scrollbar {
+   height: 8px;
+}
+
+.gallery-images::-webkit-scrollbar-thumb {
+   background-color: #d4a200;
+   border-radius: 4px;
+}
+
+.gallery-images::-webkit-scrollbar-track {
+   background: #f0f0f0;
 }
