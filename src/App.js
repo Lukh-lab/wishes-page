@@ -8,6 +8,8 @@ import memory2 from './assets/pic2.jpg';
 import memory3 from './assets/pic3.jpg';
 import plushySticker from './assets/bubu1.png';
 import './App.css';
+import Login from './Login'; // Import Login component
+import MiniGame from './MiniGame';
 
 function Home() {
     const [showConfetti, setShowConfetti] = useState(false);
@@ -85,12 +87,30 @@ function Home() {
 }
 
 function App() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLogin = () => setIsLoggedIn(true);
+
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/gallery" element={<Gallery />} />
+                {!isLoggedIn ? (
+                    <Route path="*" element={<Login onLogin={handleLogin} />} />
+                ) : (
+                    <>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/gallery" element={<Gallery />} />
+                        <Route path="/minigame" element={<MiniGame />} /> {/* Add MiniGame route */}
+                    </>
+                )}
             </Routes>
+            {isLoggedIn && (
+                <div className="nav-links">
+                    <Link to="/">Home</Link>
+                    <Link to="/gallery">Gallery</Link>
+                    <Link to="/minigame">Mini Game</Link> {/* Link to MiniGame */}
+                </div>
+            )}
         </Router>
     );
 }

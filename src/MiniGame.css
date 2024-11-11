@@ -1,0 +1,55 @@
+/* src/MiniGame.css */
+.mini-game {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.card {
+    width: 100%;
+    padding-top: 100%; /* To make cards square */
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-front {
+    background-color: #d4a200;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0);
+}
+
+.congrats {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #d4a200;
+}
