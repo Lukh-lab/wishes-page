@@ -14,7 +14,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  overflow-x: hidden;
+  overflow-x: auto; /* Allow horizontal scrolling for the entire page */
+  overflow-y: auto; /* Optionally hide vertical scroll if not needed */
 }
 
 /* Particles Background */
@@ -37,6 +38,43 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+/* Responsive container for mobile */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+  }
+
+  .header {
+      font-size: 1.4em;
+  }
+
+  .wish-text {
+      font-size: 0.9em;
+      margin: 10px 0 15px;
+      line-height: 1.4;
+  }
+
+  .sneak-peek img {
+      max-width: 100%;
+      border-radius: 8px;
+  }
+
+  .wish-button, .gallery-button {
+      padding: 8px 12px;
+      font-size: 0.85em;
+  }
+
+  .gallery img {
+      max-width: 80px;
+  }
+
+  .plushy-sticker {
+      width: 35px;
+  }
 }
 
 .header {
