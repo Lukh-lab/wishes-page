@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/wishes-page/static/css/main.e0ca1eba.css",
-    "main.js": "/wishes-page/static/js/main.92e5166d.js",
+    "main.css": "/wishes-page/static/css/main.eda9d319.css",
+    "main.js": "/wishes-page/static/js/main.c49f4e9b.js",
     "static/js/453.c2aea3cf.chunk.js": "/wishes-page/static/js/453.c2aea3cf.chunk.js",
     "static/media/IMG_3177.MOV": "/wishes-page/static/media/IMG_3177.4f99b07de1bdb89d6779.MOV",
+    "static/media/IMG_0266.MOV": "/wishes-page/static/media/IMG_0266.87fd571ca3dbb9122cad.MOV",
+    "static/media/IMG_1040.MOV": "/wishes-page/static/media/IMG_1040.b3aa7f783e5af6cbb658.MOV",
+    "static/media/video2.mp4": "/wishes-page/static/media/video2.6ae906c43674615461b8.mp4",
     "static/media/IMG_0286.MOV": "/wishes-page/static/media/IMG_0286.a46be5ab4dfbee82e242.MOV",
     "static/media/video1.mp4": "/wishes-page/static/media/video1.ffbd5bce3437cded39ee.mp4",
+    "static/media/pic1.jpg": "/wishes-page/static/media/pic1.1e0eaf69ada22deb1900.jpg",
+    "static/media/kebaya1.jpg": "/wishes-page/static/media/kebaya1.890e1ec51bb34a756ffe.jpg",
     "static/media/bubu1.png": "/wishes-page/static/media/bubu1.111561adbd7c3d178567.png",
     "static/media/pic2.jpg": "/wishes-page/static/media/pic2.3993b18650c75fc5d7fb.jpg",
+    "static/media/beach3.jpg": "/wishes-page/static/media/beach3.bea32e3e05cbe8d017d1.jpg",
+    "static/media/beach4.jpg": "/wishes-page/static/media/beach4.2cc9c87c73831410ad6d.jpg",
     "static/media/pic3.jpg": "/wishes-page/static/media/pic3.4f76b56bdd7218567698.jpg",
+    "static/media/kebaya2.jpg": "/wishes-page/static/media/kebaya2.65a7cd61c56a6e92d4c8.jpg",
     "static/media/picus1.jpg": "/wishes-page/static/media/picus1.231a40efae23630876ea.jpg",
+    "static/media/bubu2.jpg": "/wishes-page/static/media/bubu2.f2495cf8b438926d1b5b.jpg",
     "index.html": "/wishes-page/index.html",
-    "main.e0ca1eba.css.map": "/wishes-page/static/css/main.e0ca1eba.css.map",
-    "main.92e5166d.js.map": "/wishes-page/static/js/main.92e5166d.js.map",
+    "main.eda9d319.css.map": "/wishes-page/static/css/main.eda9d319.css.map",
+    "main.c49f4e9b.js.map": "/wishes-page/static/js/main.c49f4e9b.js.map",
     "453.c2aea3cf.chunk.js.map": "/wishes-page/static/js/453.c2aea3cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0ca1eba.css",
-    "static/js/main.92e5166d.js"
+    "static/css/main.eda9d319.css",
+    "static/js/main.c49f4e9b.js"
   ]
 }
