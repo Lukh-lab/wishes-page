@@ -1,41 +1,135 @@
+/* Gallery container */
 .gallery-container {
    text-align: center;
    padding: 20px;
+   transition: filter 0.3s ease;
+   transition: background-color 1s ease; /* Smooth background transition */
+}
+
+/* Blur gallery when overlay is active */
+.gallery-container.blurred {
+   filter: blur(8px) brightness(0.7);
 }
 
 .gallery-container h2 {
    color: #d4a200;
+   margin-bottom: 20px;
 }
 
-.gallery-images {
+/* Gallery media styles */
+.gallery-media {
    display: flex;
-   justify-content: start; /* Aligns images to the left for scroll */
-   gap: 10px;
-   overflow-x: auto; /* Enables horizontal scrolling */
-   overflow-y: hidden; /* Hides vertical scroll */
-   padding-bottom: 10px; /* Adds some space for scroll visibility */
+   gap: 20px;
+   overflow-x: auto;
+   overflow-y: hidden;
+   padding-bottom: 10px;
 }
 
-.gallery-images img {
-   width: 150px;
-   border-radius: 5px;
-   transition: transform 0.3s;
-}
-
-.gallery-images img:hover {
-   transform: scale(1.1);
-}
-
-/* Optional: Styling for scrollbar on supported browsers */
-.gallery-images::-webkit-scrollbar {
+.gallery-media::-webkit-scrollbar {
    height: 8px;
 }
 
-.gallery-images::-webkit-scrollbar-thumb {
+.gallery-media::-webkit-scrollbar-thumb {
    background-color: #d4a200;
    border-radius: 4px;
 }
 
-.gallery-images::-webkit-scrollbar-track {
+.gallery-media::-webkit-scrollbar-track {
    background: #f0f0f0;
+}
+
+/* Video wrapper styling */
+.video-wrapper {
+   position: relative;
+   width: 150px;
+   cursor: pointer;
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-wrapper:hover {
+   transform: scale(1.05);
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-video {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   object-fit: cover;
+}
+
+/* Play overlay for video preview */
+.play-overlay {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2.5rem;
+   color: rgba(255, 255, 255, 0.9);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: opacity 0.3s, transform 0.3s;
+   pointer-events: none;
+   font-weight: bold;
+}
+
+.video-wrapper:hover .play-overlay {
+   opacity: 1;
+   transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Full-page video overlay */
+.video-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000;
+}
+
+.overlay-video {
+   width: 90vw;
+   height: 90vh;
+   object-fit: cover;
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Typewriter text over video */
+.typewriter {
+   position: absolute;
+   bottom: 10%;
+   color: #ffffff;
+   font-size: 2rem;
+   text-align: center;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: typing 4s steps(40, end) forwards, fadeIn 1s ease 0s; /* Fade-in added */
+}
+
+/* Typing effect without cursor */
+@keyframes typing {
+   from {
+      width: 0;
+   }
+   to {
+      width: 100%;
+   }
+}
+
+/* Fade-in animation for typewriter text */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }

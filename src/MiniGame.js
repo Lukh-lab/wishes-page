@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 import './MiniGame.css';
 
 const images = [
-    '/assets/anniversary1.jpg', 
-    '/assets/anniversary2.jpg', 
-    '/assets/anniversary3.jpg', 
-    '/assets/anniversary4.jpg',
-    '/assets/anniversary5.jpg',
-    '/assets/anniversary6.jpg'
+    '/assets/kebaya2.jpg', 
+    '/assets/kebaya1.jpg', 
+    '/assets/pic1.jpg', 
+    '/assets/beach4.jpg',
+    '/assets/beach3.jpg',
+    '/assets/bubu 2.jpg'
 ];
 
 function MiniGame() {
