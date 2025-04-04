@@ -18,11 +18,25 @@
 
 /* Gallery media styles */
 .gallery-media {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
    gap: 20px;
-   overflow-x: auto;
-   overflow-y: hidden;
-   padding-bottom: 10px;
+   justify-items: center;
+   margin: 0 auto;
+   max-width: 800px;
+}
+
+/* Responsive for tablets and phones */
+@media (max-width: 768px) {
+   .gallery-media {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 480px) {
+   .gallery-media {
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
 
 .gallery-media::-webkit-scrollbar {
