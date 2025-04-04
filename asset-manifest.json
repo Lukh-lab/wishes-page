@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/wishes-page/static/css/main.b6f0212b.css",
-    "main.js": "/wishes-page/static/js/main.2e0420f0.js",
+    "main.css": "/wishes-page/static/css/main.e0ca1eba.css",
+    "main.js": "/wishes-page/static/js/main.a91c9070.js",
     "static/js/453.c2aea3cf.chunk.js": "/wishes-page/static/js/453.c2aea3cf.chunk.js",
     "static/media/IMG_3177.MOV": "/wishes-page/static/media/IMG_3177.4f99b07de1bdb89d6779.MOV",
+    "static/media/IMG_0266.MOV": "/wishes-page/static/media/IMG_0266.87fd571ca3dbb9122cad.MOV",
+    "static/media/IMG_1040.MOV": "/wishes-page/static/media/IMG_1040.b3aa7f783e5af6cbb658.MOV",
+    "static/media/video2.mp4": "/wishes-page/static/media/video2.6ae906c43674615461b8.mp4",
     "static/media/IMG_0286.MOV": "/wishes-page/static/media/IMG_0286.a46be5ab4dfbee82e242.MOV",
     "static/media/video1.mp4": "/wishes-page/static/media/video1.ffbd5bce3437cded39ee.mp4",
     "static/media/pic1.jpg": "/wishes-page/static/media/pic1.1e0eaf69ada22deb1900.jpg",
@@ -16,12 +19,12 @@
     "static/media/picus1.jpg": "/wishes-page/static/media/picus1.231a40efae23630876ea.jpg",
     "static/media/bubu2.jpg": "/wishes-page/static/media/bubu2.f2495cf8b438926d1b5b.jpg",
     "index.html": "/wishes-page/index.html",
-    "main.b6f0212b.css.map": "/wishes-page/static/css/main.b6f0212b.css.map",
-    "main.2e0420f0.js.map": "/wishes-page/static/js/main.2e0420f0.js.map",
+    "main.e0ca1eba.css.map": "/wishes-page/static/css/main.e0ca1eba.css.map",
+    "main.a91c9070.js.map": "/wishes-page/static/js/main.a91c9070.js.map",
     "453.c2aea3cf.chunk.js.map": "/wishes-page/static/js/453.c2aea3cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6f0212b.css",
-    "static/js/main.2e0420f0.js"
+    "static/css/main.e0ca1eba.css",
+    "static/js/main.a91c9070.js"
   ]
 }
